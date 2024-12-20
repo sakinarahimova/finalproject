@@ -96,8 +96,10 @@
     right: 10px;
 }
 
-.desc , .desc-menu{
+.desc , .desc-menu{    
+    min-width: 296px;
     width: 80%;
+    /* min-width: 1152px; */
 }
 .desc div{
     padding: 15px 20px;
@@ -121,4 +123,114 @@
     gap: 20px;
 
 } 
+@media screen and (min-width:771px) and (max-width: 1152px){
+    .grand-hall-container , .small-hall-container , .menu-container{
+        height: 360px;
+        width: 600px;
+    }
+    .grand-hall-name , .small-hall-name{
+        font-size: 40px;
+        padding:  15px 10px 0;
+        margin-bottom: 0px;
+        color: rgba(176,57,73,0.7);
+    }
+    .carousel1 , .carousel2 , .carousel3{
+        overflow: hidden;
+        position: relative;
+        width: 530px;
+        height: 290px;
+    }
+    .carousel1 img , .carousel2 img , .carousel3 img{
+        width: 220px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .carousel1-track1 , .carousel2-track , .carousel3-track{
+        margin-left: -270px;
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        transition: transform 1s ease-in-out;
+    }
+    .desc div li{
+        margin: 0 20px;
+        font-size: 1.5em;
+        list-style-type: square;
+    }
+    .desc-p{
+        font-size: 2em;
+        color: rgba(163,41,62,0.9);
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width:299px) and (max-width: 771px){
+    .grand-hall-container , .small-hall-container , .menu-container{
+        height: 290px;
+        width: 480px;
+    }
+    .grand-hall-name , .small-hall-name{
+        font-size: 35px;
+        padding:  15px 10px 0;
+        margin-bottom: -15px;
+    }
+    .carousel1 , .carousel2 , .carousel3{
+        width: 460px;
+        height: 260px;
+    }
+    .carousel1 img , .carousel2 img , .carousel3 img{
+        width: 190px;
+        height: 150px;
+    }
+    .carousel1-track1 , .carousel2-track , .carousel3-track{
+        margin-left: -250px;
+    }
+    .desc div li{
+        font-size: 1.4em;
+    }
+    .desc-p{
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 620px){
+    .grand-hall-container , .small-hall-container , .menu-container{
+        height: 220px;
+        width: 296px;
+    }
+    .grand-hall-name , .small-hall-name{
+        font-size: 30px;
+        padding:  15px 10px 0;
+        margin-bottom: -10px;
+        color: rgba(176,57,73,0.7);
+    }
+    .carousel1 , .carousel2 , .carousel3{
+        overflow: hidden;
+        position: relative;
+        width: 280px;
+        height: 180px;
+    }
+    .carousel1 img , .carousel2 img , .carousel3 img{
+        width: 130px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .carousel1-track1 , .carousel2-track , .carousel3-track{
+        margin-left: -200px;
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        transition: transform 1s ease-in-out;
+    }
+    .desc div li{
+        margin: 0 20px;
+        font-size: 1.1em;
+        list-style-type: square;
+    }
+    .desc-p{
+        font-size: 1.4em;
+        color: rgba(163,41,62,0.9);
+        margin-bottom: 10px;
+    }
+}
 
