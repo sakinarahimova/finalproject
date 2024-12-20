@@ -19,29 +19,37 @@
 .header-go-back-img{
     width: 60px;
 }
-.section-1-wrapper{
+.section-1-wrapper , .section-2-wrapper{
     margin-top: 10px;
     width: 100%;
 }
-.section-1-container{    
+.section-1-container , .section-2-container{    
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.grand-hall-container{
-    height: 500px;
+.grand-hall-container , .small-hall-container , .menu-container{
+    height: 560px;
     width: 900px;
-    /* background-color: rgba(255,224,225, 0.875); */
     background-image: url('/explorepageimages/Free\ Vector\ _\ Abstract\ watercolor\ background.jpg');
     border: 3px solid rgb(207,135,136);
     border-radius: 20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
-.carousel1{
+.grand-hall-name , .small-hall-name{
+    text-align: center;
+    font-size: 60px;
+    padding:  20px 10px 0;
+    margin-bottom: -10px;
+    color: rgba(176,57,73,0.7);
+}
+.carousel1 , .carousel2 , .carousel3{
+    overflow: hidden;
     position: relative;
     width: 800px;
     height: 500px;
@@ -50,17 +58,22 @@
     display: flex;
     align-items: center;
 }
-.carousel-track{
+.carousel1-track1 , .carousel2-track , .carousel3-track{
+    margin-left: -470px;
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-wrap: nowrap;
+    width: auto;
+    transition: transform 1s ease-in-out;
 }
+.carousel1-track1 > div , .carousel2-track > div , .carousel3-track > div{
+    transition: transform 1s ease-in-out;
+  }
 .carousel-item{
-    flex: 0 0 100%; 
     text-align: center;
 }
-.carousel1 img{
-    width: 100%;
-    height: 100%;
+.carousel1 img , .carousel2 img , .carousel3 img{
+    width: 350px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -76,12 +89,36 @@
     cursor: pointer;
     z-index: 1;
 }
-.arrow.left{
+.left1 , .left2{
     left: 10px;
 }  
-.arrow.right{
+.right1 ,.right2{
     right: 10px;
 }
 
-  
+.desc , .desc-menu{
+    width: 80%;
+}
+.desc div{
+    padding: 15px 20px;
+    border: 1px solid rgb(107, 22, 37);
+    border-radius: 15px;
+    background-color: rgba(162,54,63,0.4);
+    margin-bottom: 20px;
+}
+.desc div li{
+    margin: 0 20px;
+    font-size: 1.5em;
+    list-style-type: square;
+}
+.desc-p{
+    font-size: 3em;
+    color: rgba(163,41,62,0.9);
+    margin-bottom: 10px;
+}
+.desc-size{
+    display: flex;
+    gap: 20px;
+
+} 
 
