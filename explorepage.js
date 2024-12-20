@@ -29,14 +29,14 @@ function initializeCarousel(trackSelector, leftButtonSelector, rightButtonSelect
       track.removeChild(firstElement);
       track.append(firstElement);
   
-      track.style.transition = "none";
+    //   track.style.transition = "none";
       track.style.transform = "translateX(15px)";
   
       updateIndexes();
       updateCarousel();
   
       setTimeout(() => {
-        track.style.transition = "transform 0.5s ease-in-out";
+        track.style.transition = "transform 1s ease-in-out";
         track.style.transform = "translateX(-15px)";
       }, 10);
     }
@@ -46,14 +46,14 @@ function initializeCarousel(trackSelector, leftButtonSelector, rightButtonSelect
       track.removeChild(lastElement);
       track.prepend(lastElement);
   
-      track.style.transition = "none";
+    //   track.style.transition = "none";
       track.style.transform = "translateX(-15px)";
   
       updateIndexes();
       updateCarousel();
   
       setTimeout(() => {
-        track.style.transition = "transform 0.5s ease-in-out";
+        track.style.transition = "transform 1s ease-in-out";
         track.style.transform = "translateX(15px)";
       }, 10);
     }
@@ -65,7 +65,6 @@ function initializeCarousel(trackSelector, leftButtonSelector, rightButtonSelect
     updateCarousel();
   }
   
-  // Initialize both carousels
   initializeCarousel('.carousel1-track1', '.arrow.left1', '.arrow.right1');
   initializeCarousel('.carousel2-track', '.arrow.left2', '.arrow.right2');
   
