@@ -47,6 +47,28 @@
     font-size: 1.5em;
     text-align: center;
 }
+@media screen and (min-width:420px) and (max-width: 620px) {
+    .header-go-back-img{
+        width: 35px;
+    }
+    .header-load{
+        gap: 20px;
+    }
+    .header-load a{
+        font-size: 1.2em;
+    }    
+}
+@media screen and (max-width: 420px) {
+    .header-go-back-img{
+        width: 28px;
+    }
+    .header-load{
+        gap: 17px;
+    }
+    .header-load a{
+        font-size: 0.9em;
+    }    
+}
 .section-1{
     margin-top: 110px;
 }
@@ -669,14 +691,14 @@
         width: 100%;
         padding: 30px 20px;
         color: white;
-        height: 350px;
+        height: 300px;
         gap: 20px;
         display: flex;
         flex-direction: column;
         align-content: space-between;
     }
     .footer-left h3{
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin-bottom: 10px;
     }
     .footer-left li{
@@ -685,6 +707,7 @@
         font-weight: 200;
     }
     .footer-icon{
+        font-size: 0.8em;
         margin: 10px 0;
     }
     .footer-icon img{
@@ -714,6 +737,7 @@
 .carousel4-p{
     font-size: 1.5em;
     color: #ff6b6b;
+    margin-left: 10px;
 }
 .carousel4 {
     overflow: hidden;
@@ -727,15 +751,14 @@
   
 .carousel4-track {
     display: flex;
-    width: calc(4 * 60%);
+    /* width: calc(4 * 60%); */
+    width: fit-content;
     animation: slide2 20s infinite; 
     animation-play-state: running;
 }
-  
 .carousel4-track > div {
     flex: 0 0 40%;
-}
-  
+}  
 .carousel4 img {
     border-radius: 20px;
     border: 3px solid rgb(107, 22, 37);    
@@ -787,3 +810,49 @@
       transform: translateX(0);
     }
 } 
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    .carousel4-track > div {
+        flex: 0 0 60%;
+    }
+    .carousel4{
+        height: 370px;
+    }
+    .carousel4 img{
+        height: 320px;
+    }
+    .carousel4-icon{
+        width: 60px;
+        height: 40px;
+        margin-bottom: 8px;
+        margin-top: 5px;
+    }
+    .carousel4-h3{
+        font-size: 1.6em;
+    }
+    .carousel4-p{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .carousel4-track > div {
+        flex: 0 0 70%;
+    }
+    .carousel4{
+        height: 320px;
+    }
+    .carousel4 img{
+        height: 280px;
+    }
+    .carousel4-icon{
+        width: 50px;
+        height: 30px;
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
+    .carousel4-h3{
+        font-size: 1.3em;
+    }
+    .carousel4-p{
+        font-size: 1em;
+    }
+}
