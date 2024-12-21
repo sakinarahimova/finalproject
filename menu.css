@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 .header-wrapper{
+    top: 0;
+    position: fixed;
     width: 100%;
 }
 .header-container{
@@ -26,4 +28,136 @@
     background-color: #ff4c4c;
     box-shadow: 0 0 20px rgba(255, 75, 75, 0.8);
     transform: scale(1.2);
+}
+.header-load{
+    justify-content: flex-end;
+    padding-right: 10px;
+    gap: 15px;
+    display: flex;
+    min-width: 200px;
+    align-items: center;
+    width: 60%;
+    max-width: 400px;
+}
+.header-load a{
+    text-decoration: none;
+    color: #5e242c;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+#section1{
+    margin-top: 110px;
+}
+.section-container{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 20px 0;
+    display: flex;
+}
+.menu-heading{
+    display: flex;
+}
+.menu-h2{
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    text-align: start;
+    color: #bb2f56;
+}
+.list-icon{
+    width: 80px;
+    height: 50px;
+}
+.div-menu-list{
+    padding: 0 20px;
+}
+ul.menu-inner-list{
+    font-weight: 300;
+    color: #744141;
+    font-size: 22px;
+    padding: 10px 20px;
+    list-style-type: square;
+}
+ul.menu-list{
+    font-weight: 600;
+    font-size: 26px;
+    padding-left: 10px;
+    color: #7d1818;
+    list-style-type: circle;
+}
+
+
+
+.footer-container{
+    margin-top: 20px;
+    background-color: #24292d;
+    width: 100%;
+    padding: 40px 30px;
+    color: white;
+    height: 300px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left h3{
+    color: rgba(255, 0, 0, 0.497);
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+.footer-left li{
+    list-style-type: none;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.footer-icon{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.footer-icon img{
+    width: 20px;
+    margin-right: 10px;
+}
+.footer-right{
+    padding-right: 20px;
+}
+.footer-icon a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (min-width:299px) and (max-width: 771px){
+    .footer-container{
+        margin-top: 20px;
+        background-color: #24292d;
+        width: 100%;
+        padding: 30px 20px;
+        color: white;
+        height: 350px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .footer-left h3{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .footer-left li{
+        font-size: 1em;
+        margin-bottom: 8px;
+        font-weight: 200;
+    }
+    .footer-icon{
+        margin: 10px 0;
+    }
+    .footer-icon img{
+        width: 15px;
+        margin-right: 10px;
+    }
+    .footer-right{
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
 }
