@@ -131,6 +131,8 @@
 
 } 
 .sections-2-h3{
+    text-align: center;
+    width: 80%;
     font-style: italic;
     font-weight: 700;
     font-size: 3em;
