@@ -85,7 +85,68 @@ ul.menu-list{
     color: #7d1818;
     list-style-type: circle;
 }
-
+li .menu-inner-list :hover{
+    color: #5e242c;
+    max-width: 350px;
+    cursor: pointer;
+    background-color: #ff4c4c;
+    box-shadow: 0 0 20px rgba(228, 83, 83, 0.8);
+    /* transform: scale(1.2); */
+}
+@media screen and (max-width: 930px) {
+    .menu-h2{
+        font-size: 2em;
+    }
+    .list-icon{
+        width: 60px;
+        height: 40px;
+    }
+    ul.menu-inner-list{
+        font-size: 19px;
+    }
+    ul.menu-list{
+        font-size: 22px;
+    }
+    .div-menu-list{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .menu-h2{
+        font-size: 1.7em;
+    }
+    .list-icon{
+        width: 40px;
+        height: 30px;
+    }
+    ul.menu-inner-list{
+        font-size: 1em;
+    }
+    ul.menu-list{
+        font-size: 1.2em;
+    }
+    .div-menu-list{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 370px) {
+    .menu-h2{
+        font-size: 1.3em;
+    }
+    .list-icon{
+        width: 40px;
+        height: 30px;
+    }
+    ul.menu-inner-list{
+        font-size: 0.9em;
+    }
+    ul.menu-list{
+        font-size: 1.1em;
+    }
+    .div-menu-list{
+        padding: 0;
+    }
+}
 
 
 .footer-container{
@@ -127,7 +188,7 @@ ul.menu-list{
     text-decoration: none;
     color: white;
 }
-@media screen and (min-width:299px) and (max-width: 771px){
+@media screen and (min-width:471px) and (max-width: 771px){
     .footer-container{
         margin-top: 20px;
         background-color: #24292d;
@@ -146,6 +207,40 @@ ul.menu-list{
     }
     .footer-left li{
         font-size: 1em;
+        margin-bottom: 8px;
+        font-weight: 200;
+    }
+    .footer-icon{
+        margin: 10px 0;
+    }
+    .footer-icon img{
+        width: 15px;
+        margin-right: 10px;
+    }
+    .footer-right{
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:299px) and (max-width: 471px){
+    .footer-container{
+        margin-top: 20px;
+        background-color: #24292d;
+        width: 100%;
+        padding: 30px 20px;
+        color: white;
+        height: 350px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .footer-left h3{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .footer-left li{
+        font-size: 0.8em;
         margin-bottom: 8px;
         font-weight: 200;
     }
