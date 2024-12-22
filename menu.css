@@ -47,6 +47,28 @@
     font-size: 1.5em;
     text-align: center;
 }
+@media screen and (min-width:420px) and (max-width: 620px) {
+    .header-go-back-img{
+        width: 35px;
+    }
+    .header-load{
+        gap: 20px;
+    }
+    .header-load a{
+        font-size: 1.2em;
+    }    
+}
+@media screen and (max-width: 420px) {
+    .header-go-back-img{
+        width: 28px;
+    }
+    .header-load{
+        gap: 17px;
+    }
+    .header-load a{
+        font-size: 0.9em;
+    }    
+}
 #section1{
     margin-top: 110px;
 }
