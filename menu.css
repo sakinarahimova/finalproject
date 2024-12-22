@@ -155,6 +155,23 @@ li .menu-inner-list :hover{
     .menu-list-container{
         padding: 0 10px;
     }
+    .menu-img-container{
+        gap: 15px;
+        max-width: 240px;
+        max-height: 360px;
+        padding: 20px;
+    
+    }
+    .menu-img-container h4{
+        color: #7d1818;
+        font-size: 20px;
+    }
+    .menu-img{
+        border: 1px solid #7d1818;
+        max-width: 200px;
+        max-height: 300px;
+        object-fit: contain;
+    }
 }
 @media screen and (max-width: 570px) {
     .menu-h2{
@@ -172,6 +189,22 @@ li .menu-inner-list :hover{
     }
     .menu-list-container{
         padding: 0;
+    }
+    .menu-img-container{
+        max-width: 240px;
+        max-height: 360px;
+        padding: 15px;
+    
+    }
+    .menu-img-container h4{
+        color: #7d1818;
+        font-size: 15px;
+    }
+    .menu-img{
+        border: 1px solid #7d1818;
+        max-width: 210px;
+        max-height: 320px;
+        object-fit: contain;
     }
 }
 @media screen and (max-width: 370px) {
