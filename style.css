@@ -196,6 +196,7 @@ button.about-us-btn, button.contact-us-btn {
 } */
 .palace-name {
     margin-top: 80px;
+    margin-bottom: 10px;
     font-style: italic;
     font-size: 85px;
     width: 500px;
