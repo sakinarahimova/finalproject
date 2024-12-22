@@ -35,28 +35,28 @@ const items = [
   { title: "Freshly Squeezed Juices", src: "./menuimages/1/freshlysqueezed.jpg" },
   { title: "Kolbasa and Cheese Premium Platter", src: "./menuimages/1/kolbasacheesepremiumplatter.jpg" },
   { title: "Grilled Trout", src: "./menuimages/1/trout.jpg" },
-  { title: "Grilled Salmon", src: "./menuimages/1/salmon.jpg" }, 
-  { title: "Stuffed Quail (Bıldırcın)", src: "./menuimages/1/bildircin.jpg" }, 
+  { title: "Grilled Salmon", src: "./menuimages/1/salmon.jpg" },
+  { title: "Stuffed Quail (Bıldırcın)", src: "./menuimages/1/bildircin.jpg" },
   { title: "Kabab Deluxe Assortment", src: "./menuimages/1/kababdeluxe.jpg" }
 ];
 
+function updateImage(li, sectionId) {
+  const liContent = li.textContent.trim();
+  const matchedItem = items.find((item) => item.title === liContent);
 
-  
-  function updateImage(li) {
-    const liContent = li.textContent.trim();
-    const matchedItem = items.find((item) => item.title === liContent);
-  
-    const img = document.querySelector(".section5 .menu-img");
-    const imgTitle = document.querySelector(".section5 h4");
-    
-    img.src = matchedItem.src;
-    img.alt = matchedItem.title;
-    imgTitle.textContent = matchedItem.title;
-  }
-  
-  const liElements = document.querySelectorAll("ul.menu-inner-list li");
-  
+  const section = document.querySelector(`#${sectionId}`);
+  const img = section.querySelector(".menu-img");
+  const imgTitle = section.querySelector("h4");
+
+  img.src = matchedItem.src;
+  img.alt = matchedItem.title;
+  imgTitle.textContent = matchedItem.title;
+}
+
+document.querySelectorAll("section").forEach((section) => {
+  const liElements = section.querySelectorAll("ul.menu-inner-list li");
+
   liElements.forEach((li) => {
-    li.addEventListener("click", () => updateImage(li));
+    li.addEventListener("click", () => updateImage(li, section.id));
   });
-  
+});
