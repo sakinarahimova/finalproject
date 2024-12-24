@@ -1,8 +1,15 @@
+const BtnTranslate = document.querySelector('.btn-translate')
+  const ListTranslate = document.querySelector(".ul-translate")
+  BtnTranslate.addEventListener("click" ,() => {
+    console.log("h");    
+    ListTranslate.classList.toggle("ul-translate-active")
+  })
 function initializeCarousel(trackSelector, leftButtonSelector, rightButtonSelector) {
   const track = document.querySelector(trackSelector);
   const leftButton = document.querySelector(leftButtonSelector);
   const rightButton = document.querySelector(rightButtonSelector);
   const images = track.children;
+  
 
   let indexes = [];
   for (let i = 0; i < images.length; i++) {
@@ -71,23 +78,4 @@ function initializeCarousel(trackSelector, leftButtonSelector, rightButtonSelect
 
 initializeCarousel('.carousel1-track1', '.arrow.left1', '.arrow.right1');
 initializeCarousel('.carousel2-track', '.arrow.left2', '.arrow.right2');
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const track = document.querySelector(".carousel3-track");
-
-//   function moveToNextImage() {
-//       const firstImage = track.firstElementChild;
-//       track.removeChild(firstImage);
-//       track.append(firstImage);
-//       track.style.transition = "none";
-//       track.style.transform = "translateX(-20px)";
-//       setTimeout(() => {
-//           track.style.transition = "transform 3s ease";
-//           track.style.transform = "translateX(20px)";
-//       }, 1000);
-//   }
-
-//   setInterval(moveToNextImage, 2000);
-// });
 

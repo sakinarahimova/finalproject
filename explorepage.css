@@ -24,29 +24,45 @@
     position: relative;
 }
 .btn-translate{
+    padding: 0;
     border: none;
     background: none;
     cursor: pointer;
 }
 .ul-translate{
     display: none;
-    position: absolute;
+}
+.ul-translate-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
     top: 70px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 5;
     width: 60px;
-    background-color: #f9f9f9;
+    background-color: rgb(207,135,136);
     border: 1px solid #ccc;
     position: absolute;
 }
-.header-go-back-img , .img-translate{
+.img-translate{
+    width: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+    animation: pulse 2s infinite;
+}
+.img-translate:hover{
+    transform: scale(1.2);
+}
+.header-go-back-img{
     width: 60px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
     animation: pulse 2s infinite;
 }
-.header-go-back-img:hover , .img-translate:hover{
+.header-go-back-img:hover{
     background-color: #ff4c4c;
     box-shadow: 0 0 20px rgba(255, 75, 75, 0.8);
     transform: scale(1.2);
