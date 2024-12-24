@@ -13,7 +13,7 @@ let arr = [
     `<p>Vision:</p><p>"To become the leading venue for creating unforgettable celebrations, where every event reflects elegance, joy, and cherished memories."</p><br><p>Mission:</p><p>"Our mission is to provide exceptional spaces, outstanding services, and innovative solutions to make your dreams come to life. We aim to ensure every guest leaves with a smile and memories they’ll treasure forever."</p>`,
     `<p>Stunning Venues: We offer beautifully designed spaces that can be tailored to your preferences.</p><p>Expert Team: Our experienced staff works closely with you to plan and execute every detail seamlessly.</p><p>Customizable Services: From catering to decorations, we provide bespoke solutions to match your style and needs.</p><p>Affordability Without Compromise: We deliver premium services at competitive prices, ensuring value for your investment.</p><p>Happy Clients: A proven track record of hosting successful events backed by glowing testimonials.</p>`,
     `<p>"Our wedding at Harmony Palace was magical. The team made everything so easy, and the venue was stunning!" – Sarah & Ali</p><p>"I hosted my daughter’s birthday party here, and the staff went above and beyond to make it perfect." – Farah</p><p>"The decorations, food, and attention to detail were top-notch. Our engagement ceremony was unforgettable." – Zeynab & Tural</p><p>"I can’t recommend Harmony Palace enough. The entire experience was stress-free and delightful." – Amina</p>`,
-     `<p><b>Phone:</b> +994 55 676 87 98 & +012 67 987 90 23</p><p><b>Email:</b> harmony18181@gmail.com</p><p><b>Address:</b> 123 Main Street, City</p>`
+     `<p><b>Phone:</b> +994 55 676 87 98 <br><span style="visibility:hidden"><b>Phone: </b></span> +012 67 987 90 23</p><p><b>Email:</b> harmony18181@gmail.com</p><p><b>Address:</b> 123 Main Street, City</p>`
 ];
 const checkAndUpdateArr = () => {
     const marginTop = getComputedStyle(leftMenu).marginTop
@@ -44,8 +44,8 @@ aboutUsSubmenus.forEach((li, i) => {
 });
 
 contactUsSubmenus.forEach((li) => {
-    li.addEventListener("click", (e) => {
-        e.stopPropagation();
+    // Show submenu on mouseover
+    li.addEventListener("mouseover", () => {
         contactUsSubmenus.forEach((otherLi) => {
             if (otherLi !== li) {
                 const otherSubmenu = otherLi.querySelector('ul');
@@ -53,9 +53,16 @@ contactUsSubmenus.forEach((li) => {
             }
         });
         const submenu = li.querySelector('ul');
-        if (submenu) submenu.classList.toggle('contact-us-submenu-ul-show');
+        if (submenu) submenu.classList.add('contact-us-submenu-ul-show');
+    });
+
+    // Hide submenu on mouseout
+    li.addEventListener("mouseout", () => {
+        const submenu = li.querySelector('ul');
+        if (submenu) submenu.classList.remove('contact-us-submenu-ul-show');
     });
 });
+
 aboutUsBtn.addEventListener('click', () => {
     leftMenu.classList.remove("active");
     aboutUsBtn.classList.toggle('btn-clicked');
