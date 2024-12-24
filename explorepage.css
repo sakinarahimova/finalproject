@@ -47,6 +47,9 @@
     font-size: 1.5em;
     text-align: center;
 }
+.section-1{
+    margin-top: 110px;
+}
 @media screen and (min-width:420px) and (max-width: 620px) {
     .header-go-back-img{
         width: 35px;
@@ -57,6 +60,9 @@
     .header-load a{
         font-size: 1.2em;
     }    
+    .section-1{
+        margin-top: 80px;
+    }
 }
 @media screen and (max-width: 420px) {
     .header-go-back-img{
@@ -67,10 +73,10 @@
     }
     .header-load a{
         font-size: 0.9em;
-    }    
-}
-.section-1{
-    margin-top: 110px;
+    }  
+    .section-1{
+        margin-top: 80px;
+    }  
 }
 .section-wrapper{
     margin-top: 10px;
@@ -198,33 +204,6 @@
     display: flex;
     align-items: center;
 }
-/* .carousel3{
-    overflow: hidden;
-    position: relative;
-    width: 800px;
-    height: 500px;
-    overflow: hidden;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-.carousel3-track{
-    margin-left: -470px;
-    display: flex;
-    flex-wrap: nowrap;
-    width: auto;
-    transition: transform 1s ease-in-out;
-}
-.carousel3-track > div{
-    transition: transform 3s ease;
-}
-.carousel3 img{
-    width: 350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-} */
-
 .carousel3 {
     overflow: hidden;
     position: relative;
