@@ -164,7 +164,7 @@ button.about-us-btn, button.contact-us-btn {
 
 .main-wrapper{
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     background-image: url('./homepageimages/palace.jpeg');
     background-size: cover;
     background-position: center;
