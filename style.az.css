@@ -101,10 +101,10 @@ button.about-us-btn, button.contact-us-btn {
 }
 .show-about-us {
     position: absolute;
-    right: 42%;
+    right: 30%;
     margin: 10px;
     padding: 10px;
-    height: 200px;
+    height: 230px;
     display: flex;
     width: 260px;
     font-weight: 500;
@@ -336,7 +336,7 @@ a.button-explore-page:hover{
         margin: 10px;
         padding: 6px;
         width: 130px;
-        height: 140px;
+        height: 160px;
     }
     .left-menu {
         margin-top: 10px;
@@ -409,7 +409,7 @@ a.button-explore-page:hover{
         margin: 10px;
         padding: 6px;
         width: 130px;
-        height: 140px;
+        height: 160px;
     }
     .left-menu div h1{
         font-size: 18px;
@@ -454,7 +454,7 @@ a.button-explore-page:hover{
         height: 70px;
     }
     .show-about-us{
-        right: 42%;
+        right: 30%;
     }
     .left-menu div h1{
         margin-bottom: 20px;
@@ -472,7 +472,7 @@ a.button-explore-page:hover{
         font-size: 18px;
     }
     .show-about-us{
-        right: 42%;
+        right: 30%;
     }
 }
 @media screen and (max-width: 700px) {

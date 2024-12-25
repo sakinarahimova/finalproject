@@ -42,14 +42,14 @@ function initializeCarousel(trackSelector, leftButtonSelector, rightButtonSelect
       track.removeChild(firstElement);
       track.append(firstElement);
 
-      track.style.transform = "translateX(15px)";
+      track.style.transform = "translateX(13px)";
 
       updateIndexes();
       updateCarousel();
 
       setTimeout(() => {
           track.style.transition = "transform 1s ease-in-out";
-          track.style.transform = "translateX(-15px)";
+          track.style.transform = "translateX(-13px)";
       }, 10);
   }
 
