@@ -13,7 +13,7 @@
 }
 .header-wrapper {
     width: 100%;
-    padding: 20px 30px 20px 20px;
+    padding: 10px 30px 10px 20px;
     /* background-image: url('./homepageimages/headerbackground.jpg'); */
     /* background-image: url('./homepageimages/bck.jpg'); */
     background: none;
@@ -23,7 +23,7 @@
 }
 .header-container {
     width: 100%;
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,11 +36,44 @@
 }
 .header-data {
     position: relative;
-    max-width: 250px;
+    max-width: 330px;
     display: flex;
     width: 70%;
     gap: 10px;
     justify-content: space-between;
+}
+
+.translate-container{
+    position: relative;
+}
+.btn-translate{
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.ul-translate{
+    display: none;
+}
+.ul-translate-active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    top: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 5;
+    width: 50px;
+    background-color: rgb(207,135,136);
+    border: 1px solid #ccc;
+    position: absolute;
+}
+.img-translate{
+    border: 1px solid rgb(99, 44, 9);
+    border-radius: 10px;
+    width: 50px;
 }
 .header-data ul {
     list-style: none;
@@ -247,6 +280,38 @@ a.button-explore-page:hover{
 
 
 @media screen and (min-width: 299px) and (max-width: 740px) {
+    .translate-container{
+        position: relative;
+    }
+    .btn-translate{
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .ul-translate{
+        display: none;
+    }
+    .ul-translate-active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        top: 70px;
+        list-style: none;
+        margin: 0;
+        padding: 5;
+        width: 45px;
+        background-color: rgb(207,135,136);
+        border: 1px solid #ccc;
+        position: absolute;
+    }
+    .img-translate{
+        border: 1px solid rgb(99, 44, 9);
+        border-radius: 10px;
+        width: 45px;
+    }
     .about-us-submenu li {
         padding: 2px 6px;
         font-size: 13px;

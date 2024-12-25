@@ -7,6 +7,12 @@ const contactUsSubmenu = document.querySelector('ul.contact-us-submenu');
 const contactUsSubmenus = document.querySelectorAll('ul.contact-us-submenu li');
 const lastLi = document.querySelector('.last-li-hidden')
 const explorepage = document.querySelector('.button-explore-page')
+const BtnTranslate = document.querySelector('.btn-translate')
+const ListTranslate = document.querySelector(".ul-translate")
+BtnTranslate.addEventListener("click" ,() => {
+    console.log("h");    
+    ListTranslate.classList.toggle("ul-translate-active")
+})
 
 let arr = [
     `<p>"We are Harmony Palace, a premier destination for hosting life's most memorable ceremonies, including weddings, engagements, birthdays, and henna nights. Our team is dedicated to making every celebration truly extraordinary by combining elegant venues, personalized service, and attention to detail."</p>`,

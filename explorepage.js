@@ -1,9 +1,9 @@
 const BtnTranslate = document.querySelector('.btn-translate')
-  const ListTranslate = document.querySelector(".ul-translate")
-  BtnTranslate.addEventListener("click" ,() => {
+const ListTranslate = document.querySelector(".ul-translate")
+BtnTranslate.addEventListener("click" ,() => {
     console.log("h");    
     ListTranslate.classList.toggle("ul-translate-active")
-  })
+})
 function initializeCarousel(trackSelector, leftButtonSelector, rightButtonSelector) {
   const track = document.querySelector(trackSelector);
   const leftButton = document.querySelector(leftButtonSelector);
