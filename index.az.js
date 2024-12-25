@@ -7,6 +7,15 @@ const contactUsSubmenu = document.querySelector('ul.contact-us-submenu');
 const contactUsSubmenus = document.querySelectorAll('ul.contact-us-submenu li');
 const lastLi = document.querySelector('.last-li-hidden')
 const explorepage = document.querySelector('.button-explore-page')
+const BtnTranslate = document.querySelector('.btn-translate')
+const ListTranslate = document.querySelector(".ul-translate")
+BtnTranslate.addEventListener("click" ,() => {
+    console.log("h");    
+    ListTranslate.classList.toggle("ul-translate-active")
+    contactUsSubmenu.classList.remove('show-contact-us');
+    aboutUsSubmenu.classList.remove('show-about-us');
+    leftMenu.classList.remove("active");
+})
 
 let arr = [
     `<p>"Biz Harmony Palace, həyatın ən yadda qalan mərasimlərini təşkil etmək üçün mükəmməl bir məkan, o cümlədən toylara, nişanlara, doğum günlərinə və xına gecələrinə ev sahibliyi edirik. Komandamız hər bir qeyd etməni, zərif məkanlar, şəxsi xidmətlər və ən kiçik detallara diqqət yetirərək, həqiqətən unudulmaz etmək üçün özünə həsr olunmuşdur."</p>`,
@@ -15,7 +24,6 @@ let arr = [
     `<p>"Bizim toyumuz Harmony Palace-də möcüzəvi idi. Komanda hər şeyi çox asan etdi və məkan inanılmaz dərəcədə gözəl idi!" – Sarah & Ali</p><p>"Mən qızımın doğum günü şənliyini burada keçirdim və heyət hər şeyi mükəmməl etmək üçün əlimizdən gələni etdi." – Farah</p><p>"Bəzəklər, yeməklər və detallara diqqət inanılmaz dərəcədə yüksək səviyyədə idi. Nişan mərasimimiz unudulmaz oldu." – Zeynab & Tural</p><p>"Harmony Palace-i tövsiyə etməkdən heç vaxt çəkinmirəm. Bütün təcrübə stressiz və xoş idi." – Amina</p>`,
     `<p><b>Telefon:</b> +994 55 676 87 98 <br><span style="visibility:hidden"><b>Telefon: </b></span> +012 67 987 90 23</p><p><b>Email:</b> harmony18181@gmail.com</p><p><b>Ünvan:</b> 123 Main Street, Şəhər</p>`
 ];
-
 const checkAndUpdateArr = () => {
     const marginTop = getComputedStyle(leftMenu).marginTop
     
@@ -66,6 +74,7 @@ aboutUsBtn.addEventListener('click', () => {
     aboutUsBtn.classList.toggle('btn-clicked');
     aboutUsSubmenu.classList.toggle('show-about-us');
     contactUsSubmenu.classList.remove('show-contact-us');
+    ListTranslate.classList.remove("ul-translate-active")
     checkAndUpdateArr()
 });
 
@@ -74,9 +83,10 @@ contactUsBtn.addEventListener('click', () => {
     contactUsBtn.classList.toggle('btn-clicked');
     aboutUsSubmenu.classList.remove('show-about-us');
     contactUsSubmenu.classList.toggle('show-contact-us');
+    ListTranslate.classList.remove("ul-translate-active")
 });
 document.addEventListener('click', (e) => {
-    if (!leftMenu.contains(e.target) && !aboutUsSubmenu.contains(e.target) && !contactUsSubmenu.contains(e.target) && !aboutUsBtn.contains(e.target) && !contactUsBtn.contains(e.target)) {
+    if (!leftMenu.contains(e.target)&& !aboutUsSubmenu.contains(e.target) && !contactUsSubmenu.contains(e.target) && !aboutUsBtn.contains(e.target) && !contactUsBtn.contains(e.target)) {
         leftMenu.classList.remove("active");
         aboutUsSubmenu.classList.remove('show-about-us');
         contactUsSubmenu.classList.remove('show-contact-us');
