@@ -78,6 +78,12 @@
     text-decoration: none;
     color: black;
 }
+.ul-translate li:hover a{
+    padding: 0 15px;    
+    background-color: rgb(176, 117, 75);
+    color: white !important;
+    border-radius: 10px;
+}
 .img-translate{
     border: 1px solid rgb(99, 44, 9);
     border-radius: 10px;
@@ -131,7 +137,7 @@ button.about-us-btn, button.contact-us-btn {
     background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
 }
-.about-us-submenu li, .contact-us-submenu li {
+.about-us-submenu li, .contact-us-submenu li{
     padding: 5px 10px;
     font-size: 20px;
     font-family: "Playfair Display", serif;
@@ -149,7 +155,7 @@ button.about-us-btn, button.contact-us-btn {
     padding-right: 30px;
     transition: opacity 1s ease, transform 1s ease, visibility 0s 1s;
 }
-.about-us-submenu li:hover, .contact-us-submenu li:hover {
+.about-us-submenu li:hover, .contact-us-submenu li:hover , .ul-translate a:hover  {
     background-color: rgb(176, 117, 75);
     color: white;
     border-radius: 10px;
@@ -454,7 +460,7 @@ a.button-explore-page:hover{
         height: 70px;
     }
     .show-about-us{
-        right: 30%;
+        right: 29%;
     }
     .left-menu div h1{
         margin-bottom: 20px;
