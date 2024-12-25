@@ -12,6 +12,9 @@ const ListTranslate = document.querySelector(".ul-translate")
 BtnTranslate.addEventListener("click" ,() => {
     console.log("h");    
     ListTranslate.classList.toggle("ul-translate-active")
+    contactUsSubmenu.classList.remove('show-contact-us');
+    aboutUsSubmenu.classList.remove('show-about-us');
+    leftMenu.classList.remove("active");
 })
 
 let arr = [
@@ -71,6 +74,7 @@ aboutUsBtn.addEventListener('click', () => {
     aboutUsBtn.classList.toggle('btn-clicked');
     aboutUsSubmenu.classList.toggle('show-about-us');
     contactUsSubmenu.classList.remove('show-contact-us');
+    ListTranslate.classList.remove("ul-translate-active")
     checkAndUpdateArr()
 });
 
@@ -79,9 +83,10 @@ contactUsBtn.addEventListener('click', () => {
     contactUsBtn.classList.toggle('btn-clicked');
     aboutUsSubmenu.classList.remove('show-about-us');
     contactUsSubmenu.classList.toggle('show-contact-us');
+    ListTranslate.classList.remove("ul-translate-active")
 });
 document.addEventListener('click', (e) => {
-    if (!leftMenu.contains(e.target) && !aboutUsSubmenu.contains(e.target) && !contactUsSubmenu.contains(e.target) && !aboutUsBtn.contains(e.target) && !contactUsBtn.contains(e.target)) {
+    if (!leftMenu.contains(e.target)&& !aboutUsSubmenu.contains(e.target) && !contactUsSubmenu.contains(e.target) && !aboutUsBtn.contains(e.target) && !contactUsBtn.contains(e.target)) {
         leftMenu.classList.remove("active");
         aboutUsSubmenu.classList.remove('show-about-us');
         contactUsSubmenu.classList.remove('show-contact-us');
