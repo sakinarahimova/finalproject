@@ -10,7 +10,7 @@ const items = [
     { title: "Paytaxt Salatı", src: "./menuimages/1/paytaxtsalad.jpg" },
     { title: "Çoban Salatı", src: "./menuimages/1/tomatocucumbersalad.jpg" },
     { title: "Samsa", src: "./menuimages/1/samsa.jpg" },
-    { title: "Ləblebi", src: "./menuimages/1/leblebi.jpg" },
+    { title: "Ləbləbi", src: "./menuimages/1/leblebi.jpg" },
     { title: "Kolbasa Tabağı", src: "./menuimages/1/kolbasaplatter.jpg" },
     { title: "Sous", src: "./menuimages/1/beefstew.jpg" },
     { title: "Sadə Plov", src: "./menuimages/1/plainpilaf.jpg" },
