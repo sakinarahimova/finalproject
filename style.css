@@ -14,8 +14,6 @@
 .header-wrapper {
     width: 100%;
     padding: 10px 30px 10px 20px;
-    /* background-image: url('./homepageimages/headerbackground.jpg'); */
-    /* background-image: url('./homepageimages/bck.jpg'); */
     background: none;
     background-size: cover;
     background-position: center;
@@ -362,18 +360,23 @@ a.button-explore-page:hover{
         display: none;
     }
     .left-menu div h1{
-        margin-bottom: 20px;
-    }.left-menu div p{
+        font-size: 18.5px;
         margin-bottom: 10px;
+    }.left-menu div p{
+        margin-bottom: 5px;
+        font-size: 13.5px;
     }
     .left-menu.active {
         display: flex;
         justify-content: center;
     }
+    .main-buttons{
+        width: 170px;
+    }
     .button-explore-page{
-        font-size: 15px;
-        height: 50px;
-        line-height: 15px;
+        font-size: 18px !important;
+        height: 60px !important;
+        line-height: 20px !important;
     }
 }
 @media screen and (max-width:400px) {
@@ -393,7 +396,7 @@ a.button-explore-page:hover{
         margin: 0;
         padding: 5px;
         font-size: 13px;
-        width: 35px;
+        width: 40px;
         background-color: rgba(255,255,255,0.5);
         border-radius: 10px;    
         border: 1px solid #ccc;
@@ -418,9 +421,9 @@ a.button-explore-page:hover{
         height: 140px;
     }
     .left-menu div h1{
-        font-size: 18px;
+        font-size: 17px;
     }.left-menu div p{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 @media screen and (min-width: 1500px) and (max-width:2100px) {
@@ -460,7 +463,7 @@ a.button-explore-page:hover{
         height: 70px;
     }
     .show-about-us{
-        right: 42%;
+        right: 41%;
     }
     .left-menu div h1{
         margin-bottom: 20px;
@@ -468,6 +471,12 @@ a.button-explore-page:hover{
     }.left-menu div p{
         margin-bottom: 10px;
         font-size: 22px;
+    }
+    .button-explore-page{
+        width: 300px !important;
+        font-size: 30px !important;
+        height: 100px !important;
+        line-height: 40px !important;
     }
 }
 @media screen and (min-width:1000px) and (max-width:1500px){

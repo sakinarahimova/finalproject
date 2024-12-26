@@ -34,7 +34,7 @@
 }
 .header-data {
     position: relative;
-    max-width: 310px;
+    max-width: 300px;
     display: flex;
     width: 70%;
     gap: 8px;
@@ -105,7 +105,7 @@ button.about-us-btn, button.contact-us-btn {
 }
 .show-about-us {
     position: absolute;
-    right: 28%;
+    right: 47%;
     margin: 10px;
     padding: 10px;
     height: 230px;
@@ -339,7 +339,7 @@ a.button-explore-page:hover{
         top: 40px;
         margin: 10px;
         padding: 6px;
-        width: 130px;
+        width: 160px;
         height: 160px;
     }
     .left-menu {
@@ -379,6 +379,13 @@ a.button-explore-page:hover{
         line-height: 20px !important;
     }
 }
+@media screen and (max-width: 700px) {
+    .palace-name{
+        font-size: 50px;
+        text-align: center;
+        width: 250px;
+    }
+}
 @media screen and (max-width:400px) {
     .header-logo {
         height: 39px;
@@ -392,11 +399,11 @@ a.button-explore-page:hover{
     }
     .ul-translate-active{
         gap: 5px;
-        top: 50px;
+        top: 45px;
         margin: 0;
         padding: 5px;
         font-size: 13px;
-        width: 35px;
+        width: 40px;
         background-color: rgba(255,255,255,0.5);
         border-radius: 10px;    
         border: 1px solid #ccc;
@@ -414,16 +421,22 @@ a.button-explore-page:hover{
     .show-about-us {
         text-align: start;
         right: -10px;
-        top: 40px;
+        top: 35px;
         margin: 10px;
         padding: 6px;
-        width: 130px;
-        height: 160px;
+        width: 140px;
+        height: 170px;
     }
     .left-menu div h1{
         font-size: 17px;
-    }.left-menu div p{
+    }
+    .left-menu div p{
         font-size: 12px;
+    }
+    .palace-name{
+        font-size: 40px;
+        text-align: center;
+        width: 230px;
     }
 }
 @media screen and (min-width: 1500px) and (max-width:2100px) {
@@ -463,7 +476,7 @@ a.button-explore-page:hover{
         height: 70px;
     }
     .show-about-us{
-        right: 29%;
+        right: 45%;
     }
     .left-menu div h1{
         margin-bottom: 20px;
@@ -487,12 +500,6 @@ a.button-explore-page:hover{
         font-size: 18px;
     }
     .show-about-us{
-        right: 28%;
-    }
-}
-@media screen and (max-width: 700px) {
-    .palace-name{
-        font-size: 40px;
-        width: 200px;
+        right: 47%;
     }
 }
