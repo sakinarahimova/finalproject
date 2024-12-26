@@ -13,7 +13,7 @@ const items = [
   { title: "Самса", src: "./menuimages/1/samsa.jpg" },
   { title: "Леблеби", src: "./menuimages/1/leblebi.jpg" },
   { title: "Колбасная тарелка", src: "./menuimages/1/kolbasaplatter.jpg" },
-  { title: "Соус", src: "./menuimages/1/sous.jpg" },
+  { title: "Соус", src: "./menuimages/1/beefstew.jpg" },
   { title: "Простой плов (Плов)", src: "./menuimages/1/plainpilaf.jpg" },
   { title: "Шашлычки из курицы (Шашлык)", src: "./menuimages/1/chickenskewers.jpg" },
   { title: "Соки", src: "./menuimages/1/juice.jpg" },

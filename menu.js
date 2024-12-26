@@ -12,7 +12,7 @@ const items = [
   { title: "Samsa", src: "./menuimages/1/samsa.jpg" },
   { title: "Leblebi", src: "./menuimages/1/leblebi.jpg" },
   { title: "Kolbasa Platter", src: "./menuimages/1/kolbasaplatter.jpg" },
-  { title: "Sous", src: "./menuimages/1/sous.jpg" },
+  { title: "Sous", src: "./menuimages/1/beefstew.jpg" },
   { title: "Plain Pilaf (Plov)", src: "./menuimages/1/plainpilaf.jpg" },
   { title: "Mimosa Salad", src: "./menuimages/1/mimosa.jpg" },
   { title: "Juices", src: "./menuimages/1/juice.jpg" },
