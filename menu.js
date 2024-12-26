@@ -1,3 +1,9 @@
+const BtnTranslate = document.querySelector('.btn-translate')
+const ListTranslate = document.querySelector(".ul-translate")
+BtnTranslate.addEventListener("click" ,() => {
+    console.log("h");    
+    ListTranslate.classList.toggle("ul-translate-active")
+})
 const items = [
   { title: "Fanta", src: "./menuimages/1/fanta.jpg" },
   { title: "Cola", src: "./menuimages/1/cola.jpg" },
