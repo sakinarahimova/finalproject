@@ -198,8 +198,10 @@ ul.menu-list{
     list-style-type: circle;
 }
 li .menu-inner-list :hover{
-    color: #5e242c;
     cursor: pointer;
+}
+.selected-meal{
+    color: #5e242c;
     background-color: #ff4c4c;
     margin: 0 10px;
     color: white;

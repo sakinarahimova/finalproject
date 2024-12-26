@@ -63,7 +63,11 @@ const items = [
     const liElements = section.querySelectorAll("ul.menu-inner-list li");
   
     liElements.forEach((li) => {
-      li.addEventListener("click", () => updateImage(li, section.id));
+      li.addEventListener("click", () => {
+        liElements.forEach((el) => el.classList.remove("selected-meal"));
+        li.classList.add("selected-meal");
+        updateImage(li, section.id);
+      });
     });
   });
   
